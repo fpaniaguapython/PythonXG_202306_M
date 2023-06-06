@@ -12,8 +12,12 @@ tweet = input("Introduce el texto del tweet:")
 #la palabra prohibida de esa iteracción
 for palabra_prohibida in palabras_prohibidas:
     if palabra_prohibida.upper() in tweet.upper():
+        #Mostramos un aviso
         print("No puedes utilizar la palabra", palabra_prohibida)
+        #Obtenemos la posición en el tweet de la palabra prohibida
         posicion = tweet.upper().index(palabra_prohibida.upper())
+        #Obtenemos la palabra prohibida tal y como se encuentra en el tweet
         palabra_prohibida_original = tweet[posicion:posicion+len(palabra_prohibida)]
+        #Reemplazamos la palabra prohibida del tweet por asteriscos
         tweet = tweet.replace(palabra_prohibida_original, "*****")
 print(tweet)
