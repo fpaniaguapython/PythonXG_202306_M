@@ -24,8 +24,27 @@ print(origen)
 nombre = input("Nombre:")
 ciudad = input("Ciudad de residencia:")
 email = input("Correo electrónico:")
-print("Me llamo ",nombre,", resido en ",ciudad,"y mi email es ",email,sep="")
+print("Me llamo ",nombre,", resido en ",ciudad," y mi email es ",email,sep="")
 #Solución f-string
+cadena = f'Me llamo {nombre.upper()}, resido en {ciudad} y mi email es {email}'
+print(cadena)
+
+cadena = 'Esta frase \'tiene\' comillas \ny tienes varias\t\t\t líneas'
+print(cadena)
+
+cadena = 'Lo que sea'
+cadena_multiple = '''Línea 1
+Línea 2
+Línea 3
+Línea 4'''
+print(cadena_multiple)
+
+'''
+Comentario múltiples líneas
+Línea comentario 2
+Línea comentario 3
+'''
+
 
 
 
