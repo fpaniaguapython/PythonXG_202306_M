@@ -72,3 +72,13 @@ salario_bruto = 25_000 if edad > 40 else 18_000
 
 print(f'Tu salario bruto anual es de {salario_bruto}')#f-string
 
+
+salario = 10_000
+#if 'normal'
+if salario > 5_000:
+    print("El salario es suficiente")
+    print("OK")
+
+#if 'compacto'
+if salario > 5_000: print("El salario es suficiente");print("OK")
+
