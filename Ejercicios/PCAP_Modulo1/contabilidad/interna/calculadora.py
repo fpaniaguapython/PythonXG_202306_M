@@ -1,0 +1,2 @@
+def calcular():
+    print("Calculando...")
