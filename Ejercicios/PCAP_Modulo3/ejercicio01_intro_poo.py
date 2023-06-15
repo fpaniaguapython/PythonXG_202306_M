@@ -19,6 +19,7 @@ class Gato:
         self.malhumorado = _malhumorado
         self.posicion = _posicion
         self.cansancio = 0 #Atributo cuyo valor inicial no viene como parámetro
+        self.__vivo = True
     def andar(self, delta_x, delta_z):
         print(f'Soy {self.nombre} y estoy andando...')
         self.posicion = (self.posicion[0]+delta_x, self.posicion[1], self.posicion[2]+delta_z)
@@ -56,6 +57,14 @@ print(gato2.posicion)
 print(gato2.cansancio)
 gato2.comer(2)
 print(gato2.cansancio)
+
+
+#Atributo __dict__
+#Proporciona un diccionario con todos los atributos del objeto, incluyendo su valor
+#Incluye los ocultos renombrados
+print(gato1.__dict__)
+for k,v in gato1.__dict__.items():
+    print(k,":",v)
 
 
 
